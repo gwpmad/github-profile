@@ -23,7 +23,6 @@ describe('factory: Search', function(){
     httpBackend.verifyNoOutstandingRequest();
   });
 
-
   var items = [{
     "login": "tansaku",
     "avatar_url": "https://avatars.githubusercontent.com/u/30216?v=3",

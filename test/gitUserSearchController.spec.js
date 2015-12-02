@@ -22,7 +22,12 @@ describe('GitUserSearchController', function() {
     searchFake.query.and.returnValue($q.when({
       data: {
         items: items
-      }
+      } // the $q.when bit means 'when a 'when'
+      //query is made (as it is in the $http part
+      //of searchFactory), return the following
+      //(i.e. the object literal) as the response.'
+      // The response can then be used as the
+      //argument in the .then part of doSearch().
     }));
   }));
 
